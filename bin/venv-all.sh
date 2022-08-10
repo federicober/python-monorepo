@@ -4,7 +4,7 @@
 for project in $(ls_projs); do
     (
         cd $(dirname $project)
-        hatch env run true
+        hatch run true
         rm -rf venv
         ln -s $(hatch env find) venv
     )

@@ -1,2 +1,2 @@
 bin/build-all.sh
-pip install dist/*.whl
+pip install --force-reinstall dist/*.whl
